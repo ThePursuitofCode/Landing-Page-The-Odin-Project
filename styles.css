@@ -1,0 +1,274 @@
+:root {
+    --darkBackgroundColor: #1F2937;
+    --heroMainText: #F9FAF8;
+    --heroSecondaryText: #E5E7EB;
+    --buttonColor: #3882F6;
+    --infoText: #1F2937;
+    --quoteSectionBackground: #E5E7EB;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: block;
+}
+
+/* Header Start */
+header {
+    background-color: var(--darkBackgroundColor);
+}
+    /* Nav Start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1024px;
+    padding: 1rem 0 1rem 0;
+    align-items: center;
+}
+
+.nav__logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--heroMainText);
+    text-decoration: none;
+}
+
+.nav__links {
+    display: flex;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--heroSecondaryText);
+    list-style: none;
+}
+
+
+.nav__links__one {
+    cursor: pointer;
+    padding: 0 1rem 0 0;
+}
+
+.nav__links__one:hover {
+    cursor: pointer;
+    color: var(--buttonColor);
+}
+
+.nav__links__two {
+    cursor: pointer;
+    padding: 0 1rem 0 0;
+}
+
+.nav__links__two:hover {
+    cursor: pointer;
+    color: var(--buttonColor);
+}
+
+.nav__links__three {
+    cursor: pointer;
+    padding: 0 1rem 0 0;
+}
+
+.nav__links__three:hover {
+    cursor: pointer;
+    color: var(--buttonColor);
+}
+    /* Nav End */
+
+    /* Hero Start */
+
+.heroCard {
+    display: flex;
+    margin: 0 auto;
+    width: 1024px;
+    padding: 2.5rem 0 4rem 0;
+}
+
+.card_left {
+    flex: 50%;
+    padding: 0 5rem 0 0;
+}
+
+.card_left h1 {
+    color: var(--heroMainText);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.card_left p {
+    color: var(--heroSecondaryText);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card_left button {
+    color: var(--heroMainText);
+    background-color: var(--buttonColor);
+    border: none;
+    width: 5.5rem;
+    height: 1.7rem;
+    border-radius: 0.30rem;
+    font-weight: 500;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+}
+
+.card_left button:hover {
+    background-color: #23529e;
+}
+
+.card_right {
+    flex: 50%;
+    display: flex;
+    justify-content: right;
+}
+
+.card_right img {
+    max-width: 400px;
+    max-height: 200px;
+}
+    /* Hero End */
+/* Header End */
+
+/* Section for Random Information */
+
+.info {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    width: 1024px;
+}
+
+.info__h2 {
+    padding: 2rem;
+    color: var(--infoText);
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: 0 0 5rem 0;
+}
+
+.card {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card_box {
+    border: var(--buttonColor) solid 4px;
+    height: 10rem;
+    border-radius: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.card_p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* End of INFO Section */
+
+/* Start of quote section */
+.quoteContainer {
+    background-color: var(--quoteSectionBackground);
+    padding: 5rem 0 5rem 0;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    width: 1024px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.quote__p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+}
+
+.quote__person {
+    font-size: 26px;
+    color: #1F2937;
+    font-weight: 500;
+    text-align: right;
+}
+
+/* End of info section */
+
+/* Start of Call to Action Section */
+
+.ctaContainer {
+    height: 250px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctaCard {
+    display: flex;
+    background-color: var(--buttonColor);
+    width: 800px;
+    border-radius: 0.3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.ctaL {
+
+}
+
+.ctaL h2 {
+    color: var(--heroMainText);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.ctaL p {
+    color: var(--heroSecondaryText);
+    font-size: 16px;
+    font-weight: 200;
+}
+.ctaR button {
+    border: var(--heroMainText) solid 1.5px;
+    background-color: var(--buttonColor);
+    color: var(--heroMainText);
+    width: 5.5rem;
+    height: 1.7rem;
+    border-radius: 0.30rem;
+    font-weight: 500;
+    margin: 1rem 0 0 0;
+    cursor: pointer;
+}
+
+/* end of quote section */
+
+/* footer */
+
+footer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkBackgroundColor);
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+footer p {
+    color: #E5E7EB;
+    font-size: 14px;
+    font-weight: 200;
+}
